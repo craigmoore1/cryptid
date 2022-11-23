@@ -2,6 +2,8 @@
 import { FC } from "react";
 import { SignMessage } from '../../components/SignMessage';
 import { SendTransaction } from '../../components/SendTransaction';
+import {ProposeTransaction} from '../../components/ProposeTransaction'
+import { ExecuteTransaction } from "components/ExecuteTransaction";
 
 export const ActionsView: FC = ({ }) => {
 
@@ -15,6 +17,8 @@ export const ActionsView: FC = ({ }) => {
         <div className="text-center">
           <SignMessage/>
           <SendTransaction />
+          <ProposeTransaction/>
+          <ExecuteTransaction/>
         </div>
       </div>
     </div>
